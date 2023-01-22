@@ -1,0 +1,6 @@
+arithmos1 = int(input("Δώστε τον 1ο αριθμό.\n"))
+arithmos2 = int(input("Δώστε τον 2ο αριθμό.\n"))
+arithmos3 = int(input("Δώστε τον 3ο αριθμό.\n"))
+
+print ("Ο μεγαλύτερος αριθμός είναι το: ",max(arithmos1,arithmos2,arithmos3))
+print("Ο μικρότερος αριθμός είναι το: ",min(arithmos1,arithmos2,arithmos3))
