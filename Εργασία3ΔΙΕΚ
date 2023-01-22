@@ -1,0 +1,30 @@
+EP,ON,BA=[],[],[]
+plithos= 0
+athroisma= 0
+
+for x in range(20):
+     onoma = input("Δώστε όνομα μαθητή.")
+     ON.append(onoma)
+     epitheto = input("Δώστε επίθετο μαθητή.")
+     EP.append(epitheto)
+     bathmos = input("Δώστε βαθμό μαθητή.")
+     plithos+=1
+     while True:
+          try:
+              int(bathmos)
+              athroisma +=int(bathmos)
+              break
+          except:
+                print("Αυτός δεν είναι σωστός βαθμός, δώστε έναν βαθμό σε κλίμακα 0-100.")
+                bathmos = input("Δώστε βαθμό μαθητή.")
+     BA.append(bathmos)
+
+mo =(athroisma/plithos)
+
+print("Ο μέσος όρος του τμήματος ειναι: ",mo)
+
+for bathmoulis in range(len(BA)):
+    if int(BA[bathmoulis])>mo:
+        print("Ο ",ON[bathmoulis]," ",EP[bathmoulis],"ξεπέρασε τον μέσο όρο με τον βαθμό: ",BA[bathmoulis])
+        if BA[bathmoulis] in max(BA):
+            print("Ο μέγιστος βαθμός είναι ο",BA[bathmoulis], " και τον πήρε ο ", ON[bathmoulis]," ",EP[bathmoulis])
