@@ -1,0 +1,15 @@
+zigos,monos=0,0
+
+
+for x in range(10):
+    try:
+     arithmos = int(input("Δώσε έναν αριθμό.\n"))
+     if arithmos%2==0:
+        zigos=zigos+1
+     else:
+        monos=monos+1
+    except:
+        print("Αυτό δεν ειναι αριθμός.")
+
+print("Οι μονοί αριθμοί είναι:",monos)
+print("Οι ζυγοί αριθμοί ειναι:",zigos)
